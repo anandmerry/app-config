@@ -1,7 +1,7 @@
 # TRACE, DEBUG, INFO, WARN, ERROR, FATAL, 'OFF' (quote OFF so it is interpreted as a String and not a boolean)
 logging:
   level:
-    root: FATAL 
+    root: INFO 
     io:
       pivotal: DEBUG
 #    com:
@@ -9,11 +9,11 @@ logging:
 #        eureka: DEBUG #'OFF'
 #        discovery: DEBUG #'OFF'
 #      hystrix.AbstractCommand: DEBUG
-#    org:
-#      flywaydb: DEBUG
-#        core.internal:
-#          dbsupport.SqlScript: DEBUG # SQL only
-#          command.DbMigrate: DEBUG
+    org:
+      flywaydb: DEBUG
+        core.internal:
+          dbsupport.SqlScript: DEBUG # SQL only
+          command.DbMigrate: DEBUG
 
 management:
   security:
